@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #fde2e2 !important;
+}
+
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;

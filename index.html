@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's the weather</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <p class="title">What's the Weather like?</p>
+      </div>
+    </div>
+    <div class="row search justify-content-center">
+      <div class="col-8 d-flex justify-content-center">
+        <form id="searchWeather">
+          <input type="text" id="cityName" placeholder="New York" class="mr-3">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="units" type="radio" id="metric" value="metric" checked>
+            <label class="form-check-label" for="metric">C</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="units" type="radio" id="imperial" value="imperial">
+            <label class="form-check-label" for="imperial">F</label>
+          </div>
+          <button type="submit" class="mr-4">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4 d-flex justify-content-center">
+        <button id="currentLocation">Current Location</button>
+      </div>
+    </div>
+    <div class="row display justify-content-center mt-5">
+      <div class="col-md-5 col-lg-5" id="weatherGif">
+      </div>
+      <div class="col-md-5 col-lg-5" id="tempData">
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
